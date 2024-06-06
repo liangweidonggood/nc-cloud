@@ -1,0 +1,12 @@
+//配置所有子模块
+subprojects {
+    //这里可以导入公共的依赖
+    dependencies {
+        // compileOnly：这样做可以确保Lombok在编译时可用，但不会包含在最终的构建产物中，从而减小构建产物的大小。
+        // api：依赖可以传递给子模块
+        // compileOnlyApi：仅编译时可用，不包含在构建产物中，并且可以传递给子模块
+        compileOnlyApi 'org.projectlombok:lombok'
+        // 表示将Lombok库作为注解处理器导入。
+        annotationProcessor 'org.projectlombok:lombok'
+    }
+}

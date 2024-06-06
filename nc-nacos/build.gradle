@@ -1,0 +1,5 @@
+dependencies {
+    // api可以传递依赖、implementation不能传递依赖
+    // hutool工具类
+    api 'cn.hutool:hutool-all'
+}
